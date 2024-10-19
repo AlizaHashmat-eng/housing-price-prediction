@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housing Price Prediction</title>
+   
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#input-form">Price Estimation</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home">
+        <div class="hero-content">
+            <h1>Welcome to Housing Price Prediction</h1>
+            <p>Using AI and Data Science to estimate home prices accurately.</p>
+            <a href="#input-form" class="cta-button">Get Price Estimate</a>
+        </div>
+    </header>
+
+    <!-- Price Estimation Form Section -->
+    <section id="input-form">
+        <h2>Enter Your House Details</h2>
+        <p>Provide the necessary details below to estimate the price of the house.</p>
+        <form id="price-estimation-form">
+            <label for="area">Area (sq ft):</label>
+            <input type="number" id="area" name="area" required>
+
+            <label for="bedrooms">Number of Bedrooms:</label>
+            <input type="number" id="bedrooms" name="bedrooms" required>
+
+            <label for="bathrooms">Number of Bathrooms:</label>
+            <input type="number" id="bathrooms" name="bathrooms" required>
+
+            <label for="location">Location:</label>
+            <select id="location" name="location">
+                <option value="City Center">City Center</option>
+                <option value="Suburb">Suburb</option>
+                <option value="Rural">Rural</option>
+            </select>
+
+            <label for="year">Year Built:</label>
+            <input type="number" id="year" name="year" required>
+
+            <label for="garage">Garage (Yes/No):</label>
+            <select id="garage" name="garage">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <input type="submit" value="Get Price Estimate">
+        </form>
+
+        <!-- Display the estimated price here -->
+        <div id="estimated-price"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>This project utilizes advanced AI and Data Science techniques to predict house prices based on various features, including location, area, and more.</p>
+        <p>Our model is trained on extensive data from real-world housing markets, providing accurate and reliable price estimates.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out to us!</p>
+        <form action="submit_contact.html" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Housing Price Prediction. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
